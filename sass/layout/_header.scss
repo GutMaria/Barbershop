@@ -1,0 +1,102 @@
+.header {
+    position: absolute;
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header-container {
+    @media screen and (min-width: $tabletWidth) {
+        display: flex;
+    }
+}
+
+.header-nav {
+    @media screen and (min-width: $tabletWidth) {
+        display: flex;
+    }
+}
+.logo {
+    display: block;
+    margin-right: 60px;
+}
+
+.logo-icon {
+    fill: $whiteColor;
+    @media screen and (min-width: $tabletWidth) {
+        fill: $mainTitleColor;
+    }
+}
+.site-nav {
+    display: none;
+    @media screen and (min-width: $tabletWidth) {
+        display: flex;
+    }
+}
+.site-nav__item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: $whiteColor;
+    &:not(:last-child) {
+        margin-right: 24px;
+    }
+}
+.site-nav__link {
+    height: 100%;
+    display: flex;
+    @media screen and (max-width: $desktopWidth) {
+        padding-top: 12px;
+    }
+
+    @media screen and (min-width: $desktopWidth) {
+        align-items: center;
+    }
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+    transition: color 250ms linear;
+}
+.connect {
+    position: relative;
+    display: none;
+    @media screen and (min-width: $tabletWidth) {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+    }
+    @media screen and (min-width: $desktopWidth) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    margin-left: auto;
+}
+.connect__link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $whiteColor;
+    @media screen and (min-width: $desktopWidth) {
+        margin-right: 40px;
+    }
+    // @media screen and (min-width: $tabletWidth) and (max-width: 1199px) {
+    //     position: absolute;
+    //     top: 120%;
+    //     color: red;
+    // }
+}
+.connect__btn {
+    color: $whiteColor;
+    @media screen and (min-width: $tabletWidth) and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+}

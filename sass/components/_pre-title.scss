@@ -1,0 +1,22 @@
+.pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $mainTitleColor;
+
+    margin-bottom: 20px;
+}
+
+.pre-title::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background: $mainTitleColor;
+    // transform: translate(-100% );
+    margin-right: 20px;
+    text-align: center;
+    transform: translateY(-3px);
+}

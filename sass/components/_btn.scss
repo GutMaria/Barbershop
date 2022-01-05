@@ -1,0 +1,14 @@
+.btn {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: $mainBtnColor;
+
+    padding: 12px 20px;
+    border: 1px solid $accentColor;
+    box-sizing: border-box;
+    border-radius: 25px;
+    background-color: transparent;
+}

@@ -1,0 +1,17 @@
+.container {
+    outline: 1px solid red;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $mobWidth) {
+        width: 448px;
+    }
+    @media screen and (min-width: $tabletWidth) {
+        width: 720px;
+    }
+    @media screen and (min-width: $desktopWidth) {
+        width: 1200px;
+    }
+}
