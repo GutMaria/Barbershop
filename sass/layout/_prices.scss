@@ -1,0 +1,101 @@
+.prices {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    @media screen and (min-width: $tabletWidth) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    @media screen and (min-width: $desktopWidth) {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
+
+    background-color: #111319;
+    background-image: url(../images/prices_mob.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/prices_mob_2x.png);
+    }
+
+    @media screen and (min-width: $tabletWidth) {
+        background-image: url(../images/prices_tab.png);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/prices_tab_2x.png);
+        }
+    }
+    @media screen and (min-width: $desktopWidth) {
+        background-image: url(../images/prices.png);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/prices_2x.png);
+        }
+    }
+}
+
+.prices__pre-title {
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.prices__title {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: $whiteColor;
+
+    margin-bottom: 44px;
+}
+
+.prices__list--left {
+    margin-bottom: 20px;
+}
+
+.prices__list--right {
+    margin-bottom: 50px;
+}
+
+.prices__item {
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.02em;
+    color: $secondTextColor;
+    @media screen and (min-width: $tabletWidth) {
+        font-size: 18px;
+        line-height: 1.67;
+    }
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.prices__text {
+    display: flex;
+    flex-grow: 1;
+    align-items: baseline;
+    margin-right: 6px;
+}
+.prices__count {
+}
+
+.prices__text::after {
+    content: '';
+    display: block;
+
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.12);
+    flex-grow: 1;
+    margin-left: 6px;
+}
+
+.prices__btn {
+    display: block;
+    color: $whiteColor;
+    margin: 0 auto;
+}
