@@ -45,15 +45,16 @@
 }
 
 .about__title {
+    width: 100%;
+    max-width: 330px;
     font-size: 28px;
     line-height: 1.18;
     letter-spacing: 0.05em;
     @media screen and (min-width: $desktopWidth) {
+        max-width: 483px;
         font-size: 42px;
         line-height: 1.17;
-        margin-bottom: 37px;
     }
-
     margin-bottom: 20px;
 }
 .about__after-title {
@@ -68,7 +69,7 @@
     line-height: 1.86;
     letter-spacing: 0.02em;
 
-    margin-bottom: 31px;
+    margin-bottom: 46px;
 }
 .about__btn {
 }

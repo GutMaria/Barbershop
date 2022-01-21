@@ -1,0 +1,24 @@
+.masters {
+    padding: 84px 0px;
+    @media screen and (min-width: $tabletWidth) {
+        padding: 100px 0px;
+    }
+    @media screen and (min-width: $desktopWidth) {
+        padding: 130px 0px;
+    }
+}
+
+.masters__title {
+    margin-bottom: 44px;
+}
+
+.masters-list {
+}
+.masters-card {
+}
+.masters-card__bottom {
+}
+.masters-card__name {
+}
+.masters-card__text {
+}

@@ -39,22 +39,43 @@
 }
 
 .prices__title {
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.17;
-    letter-spacing: 0.05em;
     color: $whiteColor;
 
     margin-bottom: 44px;
 }
 
+.prices__wrap {
+    padding: 30px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    @media screen and (min-width: $desktopWidth) {
+        padding: 0;
+        background: none;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.prices__list {
+    @media screen and (min-width: 1200px) {
+        width: 50%;
+        padding: 30px 40px;
+    }
+}
+
 .prices__list--left {
-    margin-bottom: 20px;
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
 }
 
 .prices__list--right {
-    margin-bottom: 50px;
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+    }
 }
 
 .prices__item {
