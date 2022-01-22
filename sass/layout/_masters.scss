@@ -77,14 +77,29 @@
     }
 }
 .social-list__link {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+
     border-radius: 50%;
     background-color: $whiteColor;
+
+    &:hover,
+    &:focus {
+        background-color: $accentColor;
+    }
+    transition: background-color 250ms linear;
 }
+
+// Иконка соц.сетей при ховере меняется фон и fill svg
 .social-list__icon {
     fill: currentColor;
+
+    .social-list__link:hover &,
+    .social-list__link:focus & {
+        fill: $whiteColor;
+    }
+    transition: fill 250ms linear;
 }
